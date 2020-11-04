@@ -1,0 +1,27 @@
+﻿<Window x:Class="leeftijd_in_jaren_maanden.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:leeftijd_in_jaren_maanden"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="geboortedatum" HorizontalAlignment="Left" Margin="51,74,0,0" VerticalAlignment="Top"/>
+        <GroupBox Header="Leeftijd in jaren,maanden en dagen" HorizontalAlignment="Left" Height="155" Margin="62,168,0,0" VerticalAlignment="Top" Width="291" FontWeight="Bold" FontSize="14"/>
+        <Canvas HorizontalAlignment="Left" Height="124" Margin="89,189,0,0" VerticalAlignment="Top" Width="243">
+            <Label Content="Jaren" Canvas.Left="10" Canvas.Top="26"/>
+            <Label Content="Maanden" Canvas.Left="10" Canvas.Top="57"/>
+            <Label Content="Dagen" Canvas.Left="10" Canvas.Top="88"/>
+            <TextBox x:Name="Txtjaren" Height="23" Canvas.Left="80" TextWrapping="Wrap" Text="" Canvas.Top="26" Width="114"/>
+            <TextBox x:Name="Txtmaanden" Height="23" Canvas.Left="80" TextWrapping="Wrap" Text="" Canvas.Top="60" Width="114"/>
+            <TextBox x:Name="Txtdagen" Height="23" Canvas.Left="80" TextWrapping="Wrap" Text="" Canvas.Top="91" Width="114"/>
+
+        </Canvas>
+        <TextBox x:Name="txtgeboortedatum" HorizontalAlignment="Left" Height="23" Margin="191,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Btnberekenen" Content="Berekenen" HorizontalAlignment="Left" Margin="436,100,0,0" VerticalAlignment="Top" Width="97" Height="31" Click="Btnberekenen_Click" IsDefault="True"/>
+        <Label x:Name="Lbltijd" Content="Label" HorizontalAlignment="Left" Margin="334,34,0,0" VerticalAlignment="Top" Width="409"/>
+
+
+    </Grid>
+</Window>
